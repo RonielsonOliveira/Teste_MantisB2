@@ -24,7 +24,6 @@ namespace TesteMantisB2
             driver.Navigate().GoToUrl("https://mantis-prova.base2.com.br/");
             driver.Manage().Window.Maximize();
 
-            // Configurar ExtentReports
             var sparkReporter = new ExtentSparkReporter("spark-report.html");
             extent = new ExtentReports();
             extent.AttachReporter(sparkReporter);
@@ -40,8 +39,6 @@ namespace TesteMantisB2
             }
 
             ReportManager.FlushReport();
-
-            // Fechar o driver do Selenium
             driver.Quit();
 
         }

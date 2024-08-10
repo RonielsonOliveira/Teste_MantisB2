@@ -40,7 +40,7 @@ namespace TesteMantisB2
         }
 
         [Test]
-        public void AddTaskTest() //Teste para verificar a adição de tarefas
+        public void AddTaskTest() // Teste para verificar a adição de tarefas
         {
             test = ReportManager.GetExtentReports().CreateTest("AddTaskTest");
 
@@ -73,7 +73,7 @@ namespace TesteMantisB2
         }
 
         [Test]
-        public void AddNoteTest() //Teste para verificar a adição de uma nota na tarefa
+        public void AddNoteTest() // Teste para verificar a adição de uma nota na tarefa
         {
             test = ReportManager.GetExtentReports().CreateTest("AddNoteTest");
 
@@ -90,7 +90,7 @@ namespace TesteMantisB2
         }
 
         [Test]
-        public void FindTaskById() //Teste para verificar o barra de pesquisa utilizando a Id da tarefa
+        public void FindTaskById() // Teste para verificar o barra de pesquisa utilizando a Id da tarefa
         {
             test = ReportManager.GetExtentReports().CreateTest("FindTaskById");
 
@@ -107,7 +107,7 @@ namespace TesteMantisB2
         }
 
         [Test]
-        public void FindTaskByResume() //Teste para verificar o uso do filtro de resumo da tarefa
+        public void FindTaskByResume() // Teste para verificar o uso do filtro de resumo da tarefa
         {
             test = ReportManager.GetExtentReports().CreateTest("FindTaskByResume");
 
@@ -176,7 +176,7 @@ namespace TesteMantisB2
     }
 
     // Classes que têm como finalidade a interação dos elementos das páginas a serem testadas
-    public class LoginPage //Classe que interage com a pagina de login
+    public class LoginPage // Classe que interage com a pagina de login
     {
         private readonly IWebDriver driver;
         private readonly TimeSpan timeout;
@@ -201,7 +201,7 @@ namespace TesteMantisB2
         }
     }
 
-    public class TaskPage //Classe que interage com a pagina de cadastro de tarefa
+    public class TaskPage // Classe que interage com a pagina de cadastro de tarefa
     {
         private readonly IWebDriver driver;
         private readonly TimeSpan timeout;
@@ -259,7 +259,7 @@ namespace TesteMantisB2
         }
     }
 
-    public class SearchElement //Classe que interage com a 
+    public class SearchElement // Classe que interage com a barra de pesquisa e com os filtros das tarefas do mantis
     {
         private readonly IWebDriver driver;
         private readonly TimeSpan timeout;
