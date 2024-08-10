@@ -18,7 +18,7 @@ namespace TesteMantisB2
 
 
         [SetUp]
-        public void InicioTeste()
+        public void StartTest()
         {
             driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://mantis-prova.base2.com.br/");
@@ -32,7 +32,7 @@ namespace TesteMantisB2
 
 
         [TearDown]
-        public void FimDoTeste() {
+        public void EndTest() {
             if (TestContext.CurrentContext.Result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Failed)
             {
                 test.Log(Status.Fail, "Test failed");
